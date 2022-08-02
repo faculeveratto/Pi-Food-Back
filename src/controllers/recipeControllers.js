@@ -86,7 +86,7 @@ async function getId (req, res){
                     healthScore:data.healthScore, //nivel de comida saludable
                     steps: data.analyzedInstructions.length? data.analyzedInstructions[0].steps.map(e=> e.step) : "Sin Pasos", //paso a paso
                     types: data.diets.map(e=>e), //tipo de dieta
-                    
+                    dishTypes: data.dishTypes //tipo de plato
                 };
         }
         catch (err) {
